@@ -37,6 +37,9 @@ public class PagerAdapter extends FragmentPagerAdapter {
             case 5:
                 return new Sciencefragment();
 
+            case 6:
+                return new BusinessFragment();
+
             default:
                 return null;
         }

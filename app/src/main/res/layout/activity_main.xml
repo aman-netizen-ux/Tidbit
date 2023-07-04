@@ -10,23 +10,25 @@
        android:layout_width="match_parent"
        android:layout_height="70dp"
        android:layout_marginTop="0dp"
-       android:background="@color/white"
+       android:background="#1c4966"
        android:id="@+id/toolbar">
 
        <RelativeLayout
            android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:gravity="center_vertical"
-           android:layout_marginTop="30dp">
+           android:layout_height="match_parent"
+           android:gravity="center_vertical">
+<!--           android:layout_marginTop="30dp"-->
+
 
            <TextView
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="Headlines"
+               android:layout_centerVertical="true"
                android:textSize="30sp"
                android:textStyle="bold"
 
-               android:textColor="#1c4966"/>
+               android:textColor="#ffffff"/>
        </RelativeLayout>
 
 
@@ -38,12 +40,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/include"
         android:layout_below="@+id/toolbar"
-        app:tabTextColor="#0047Ab"
-        app:tabSelectedTextColor="#0047AB"
-        app:tabIndicatorColor="#0047AB"
+        app:tabTextColor="#ffffff"
+        app:tabSelectedTextColor="#ffffff"
+        app:tabIndicatorColor="#ffffff"
         app:tabIndicatorHeight="3.5dp"
         android:layout_marginTop="0dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#1c4966"
         app:tabMode="scrollable">
 
         <com.google.android.material.tabs.TabItem
@@ -82,12 +84,26 @@
             android:text="Science"
             android:id="@+id/science"/>
 
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business"
+            android:id="@+id/business"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Politics"
+            android:id="@+id/politics"/>
+
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/include"
+
+
         android:layout_marginTop="3dp"
         android:id="@+id/fragment"/>
 

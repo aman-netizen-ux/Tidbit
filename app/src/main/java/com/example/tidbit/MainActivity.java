@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mentertainment=findViewById(R.id.entertainment);
         mhealth=findViewById(R.id.health);
 
+
         ViewPager viewPager = findViewById(R.id.fragment);
         tabLayout=findViewById(R.id.include);
 

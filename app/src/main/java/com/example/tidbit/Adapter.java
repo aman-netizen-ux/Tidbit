@@ -42,6 +42,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             public void onClick(View v) {
                 Intent intent = new Intent(context, CustomWebView.class);
                 intent.putExtra("url",modelClassArrayList.get(position).getUrl());
+                intent.putExtra("title", modelClassArrayList.get(position).getTitle());
+                intent.putExtra("urlToImage", modelClassArrayList.get(position).getUrlToImage());
+
                 context.startActivity(intent);
             }
         });
